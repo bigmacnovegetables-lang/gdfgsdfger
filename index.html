@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>摩羯座 ♑ 10月感情運勢・盧恩×紫微占卜</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F7F3EC;
+    --brown:#7A5030;
+    --brown-lt:#9A7050;
+    --ochre:#B08040;
+    --ochre-lt:#C8A060;
+    --oat:#D8C8A8;
+    --ink:#180C04;
+    --ink-dim:#504030;
+    --card-bg:rgba(253,249,242,0.97);
+    --card-border:rgba(122,80,48,0.18);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:
+      radial-gradient(ellipse 800px 500px at 0% 0%,rgba(122,80,48,0.1),transparent 55%),
+      radial-gradient(ellipse 600px 600px at 100% 30%,rgba(176,128,64,0.09),transparent 55%),
+      radial-gradient(ellipse 500px 400px at 45% 100%,rgba(154,112,80,0.08),transparent 55%),
+      var(--bg);
+    color:var(--ink);font-family:'Noto Sans TC',sans-serif;line-height:2;overflow-x:hidden;
+  }
+  .container{max-width:760px;margin:0 auto;padding:0 28px;}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:translateY(0)}}
+  .reveal{animation:fadeUp 1s cubic-bezier(.2,.7,.3,1) both;animation-play-state:paused;}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+  .floaty{position:fixed;pointer-events:none;z-index:0;opacity:0.09;animation:float var(--d) ease-in-out infinite;}
+  .glow{position:fixed;top:-5%;right:-5%;width:380px;height:380px;border-radius:50%;
+    background:radial-gradient(circle,rgba(122,80,48,0.08),transparent 70%);pointer-events:none;z-index:0;}
+
+  header.hero{position:relative;text-align:center;padding:96px 24px 80px;overflow:hidden;}
+  .hero-deco{position:absolute;top:50%;left:50%;transform:translate(-50%,-54%);width:520px;height:520px;opacity:0.07;z-index:0;}
+  .hero-content{position:relative;z-index:1;}
+  .month-badge{display:inline-block;background:rgba(122,80,48,0.12);border:1px solid rgba(122,80,48,0.28);border-radius:999px;padding:5px 18px;font-size:12.5px;font-weight:700;letter-spacing:0.2em;color:var(--brown);margin-bottom:16px;}
+  .eyebrow{font-size:12.5px;letter-spacing:0.44em;color:var(--brown);font-weight:700;margin-bottom:20px;text-transform:uppercase;}
+  .hero h1{font-family:'Noto Serif TC',serif;font-weight:900;font-size:clamp(38px,7.5vw,62px);line-height:1.2;
+    background:linear-gradient(135deg,var(--brown) 0%,var(--ochre-lt) 50%,var(--brown-lt) 100%);
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:10px;}
+  .hero .sub{font-family:'Noto Serif TC',serif;font-size:clamp(17px,3vw,22px);color:var(--ink-dim);margin-bottom:28px;}
+  .hero p.lede{max-width:540px;margin:0 auto;font-size:16px;color:var(--ink-dim);line-height:2.1;}
+  .brown-line{width:100px;height:1.5px;margin:30px auto;background:linear-gradient(90deg,transparent,var(--brown),var(--ochre-lt),transparent);border-radius:2px;}
+  .scroll-hint{font-size:12px;letter-spacing:0.28em;color:var(--brown);opacity:0.65;margin-top:8px;}
+  .scroll-hint svg{display:block;margin:8px auto 0;animation:bob 2s ease-in-out infinite;}
+  @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(7px)}}
+
+  section{position:relative;padding:58px 0;z-index:1;}
+  .section-title{font-family:'Noto Serif TC',serif;font-weight:700;font-size:clamp(21px,3.8vw,27px);text-align:center;margin-bottom:12px;color:var(--ink);}
+  .section-sub{text-align:center;color:var(--ink-dim);font-size:14.5px;max-width:480px;margin:0 auto 44px;}
+  .divider{width:56px;height:1.5px;margin:0 auto 44px;background:linear-gradient(90deg,transparent,var(--brown),transparent);}
+
+  .core-banner{background:linear-gradient(135deg,rgba(122,80,48,0.1),rgba(176,128,64,0.07));border-radius:26px;padding:38px 34px;text-align:center;border:1px solid rgba(122,80,48,0.2);box-shadow:0 8px 28px -15px rgba(122,80,48,0.14);}
+  .core-banner .b-icon{font-size:36px;display:block;margin-bottom:14px;}
+  .core-banner h3{font-family:'Noto Serif TC',serif;font-size:20px;color:var(--brown);margin-bottom:14px;}
+  .core-banner p{color:var(--ink-dim);font-size:15.5px;max-width:500px;margin:0 auto;}
+
+  .card-grid{display:flex;flex-direction:column;gap:24px;}
+  .oracle-card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:22px;padding:30px 28px;box-shadow:0 10px 34px -18px rgba(122,80,48,0.12);transition:transform .3s,box-shadow .3s;}
+  .oracle-card:hover{transform:translateY(-4px);box-shadow:0 20px 44px -18px rgba(122,80,48,0.2);}
+  .card-top{display:flex;align-items:center;gap:15px;margin-bottom:14px;}
+  .card-glyph{width:52px;height:52px;min-width:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Noto Serif TC',serif;font-size:22px;font-weight:700;}
+  .g-brown{background:linear-gradient(135deg,var(--brown-lt),var(--brown));color:white;}
+  .g-ochre{background:linear-gradient(135deg,var(--ochre-lt),var(--ochre));color:#180C04;}
+  .card-name{font-family:'Noto Serif TC',serif;font-weight:700;font-size:18px;color:var(--ink);}
+  .card-tag{display:inline-block;margin-top:4px;font-size:11.5px;padding:3px 10px;border-radius:999px;font-weight:700;}
+  .tag-up{background:rgba(122,80,48,0.12);color:#4A1808;}
+  .tag-rev{background:rgba(176,128,64,0.14);color:#5A3008;}
+  .card-body{color:var(--ink-dim);font-size:15px;}
+
+  .ziwei-box{background:linear-gradient(135deg,rgba(176,128,64,0.1),rgba(122,80,48,0.07));border-radius:26px;padding:40px 34px;border:1px solid rgba(176,128,64,0.2);box-shadow:0 8px 28px -15px rgba(176,128,64,0.13);}
+  .ziwei-header{text-align:center;margin-bottom:22px;}
+  .ziwei-badge{display:inline-block;background:rgba(176,128,64,0.14);border:1px solid rgba(176,128,64,0.26);border-radius:999px;padding:5px 15px;font-size:12px;font-weight:700;color:var(--ochre-lt);margin-bottom:10px;}
+  .ziwei-header h3{font-family:'Noto Serif TC',serif;font-size:20px;color:var(--ochre);}
+  .ziwei-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px;}
+  .ziwei-card{background:white;border:1px solid rgba(176,128,64,0.14);border-radius:14px;padding:18px 16px;}
+  .zc-star{font-family:'Noto Serif TC',serif;font-size:22px;font-weight:900;background:linear-gradient(135deg,var(--brown),var(--ochre));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:block;margin-bottom:7px;}
+  .ziwei-card h4{font-family:'Noto Serif TC',serif;font-size:14.5px;color:var(--ink);margin-bottom:7px;}
+  .ziwei-card p{font-size:12.5px;color:var(--ink-dim);line-height:1.85;}
+  .ziwei-combo{background:rgba(253,249,242,0.9);border:1px solid rgba(122,80,48,0.14);border-radius:13px;padding:16px 18px;font-size:14px;color:var(--ink-dim);line-height:1.9;}
+  .ziwei-combo strong{color:var(--brown);}
+
+  /* COMFORT ZONE BOX */
+  .comfort-box{background:linear-gradient(135deg,rgba(122,80,48,0.09),rgba(176,128,64,0.06));border-radius:26px;padding:40px 34px;border:1px solid rgba(122,80,48,0.18);box-shadow:0 8px 28px -15px rgba(122,80,48,0.11);}
+  .comfort-box h3{font-family:'Noto Serif TC',serif;font-size:20px;color:var(--brown);margin-bottom:18px;text-align:center;}
+  .comfort-list{display:flex;flex-direction:column;gap:14px;}
+  .comfort-item{background:white;border:1px solid rgba(122,80,48,0.13);border-radius:14px;padding:16px 20px;display:flex;gap:13px;align-items:flex-start;box-shadow:0 3px 12px -6px rgba(122,80,48,0.09);}
+  .ci-icon{font-size:19px;min-width:25px;}
+  .ci-text h4{font-family:'Noto Serif TC',serif;font-size:15px;color:var(--ink);margin-bottom:4px;}
+  .ci-text p{font-size:13.5px;color:var(--ink-dim);line-height:1.85;}
+
+  .situation-list{display:flex;flex-direction:column;gap:30px;}
+  .situation{background:var(--card-bg);border-radius:22px;padding:32px 28px;border:1px solid var(--card-border);border-left:4px solid var(--brown);box-shadow:0 8px 28px -15px rgba(122,80,48,0.12);}
+  .s2{border-left-color:var(--ochre);}
+  .s3{border-left-color:var(--oat);}
+  .sit-tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:0.1em;padding:3px 13px;border-radius:999px;margin-bottom:12px;}
+  .s1 .sit-tag{background:rgba(122,80,48,0.12);color:#4A1808;}
+  .s2 .sit-tag{background:rgba(176,128,64,0.12);color:#5A3008;}
+  .s3 .sit-tag{background:rgba(216,200,168,0.2);color:#4A3018;}
+  .situation h3{font-family:'Noto Serif TC',serif;font-weight:700;font-size:18px;margin-bottom:12px;color:var(--ink);}
+  .situation p{color:var(--ink-dim);font-size:14.5px;}
+  .brown-tag{display:inline-block;background:rgba(122,80,48,0.07);border-left:3px solid var(--brown);border-radius:0 8px 8px 0;padding:10px 15px;margin:11px 0;font-size:13.5px;color:var(--ink-dim);font-style:italic;width:100%;}
+
+  .compat-section{margin-bottom:28px;}
+  .compat-title{font-family:'Noto Serif TC',serif;font-size:17px;margin-bottom:14px;display:flex;align-items:center;gap:9px;}
+  .compat-title.good{color:#3A1808;}
+  .compat-title.warn{color:#4A2808;}
+  .compat-grid{display:flex;flex-direction:column;gap:12px;}
+  .compat-row{background:var(--card-bg);border:1px solid var(--card-border);border-radius:17px;padding:18px 20px;display:flex;gap:14px;align-items:center;box-shadow:0 3px 12px -6px rgba(122,80,48,0.09);}
+  .compat-rank{width:30px;height:30px;min-width:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:white;}
+  .rank-good{background:linear-gradient(135deg,#8A6038,#604820);}
+  .rank-warn{background:linear-gradient(135deg,#A87838,#806020);}
+  .compat-sign{width:42px;height:42px;min-width:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:17px;color:white;}
+  .sign-good{background:linear-gradient(135deg,#9A8048,#786030);}
+  .sign-warn{background:linear-gradient(135deg,#B09050,#887030);}
+  .compat-info h4{font-family:'Noto Serif TC',serif;font-size:15px;color:var(--ink);margin-bottom:3px;}
+  .compat-info p{color:var(--ink-dim);font-size:13px;line-height:1.82;}
+
+  .quote-box{background:var(--card-bg);border-radius:22px;padding:44px 36px;text-align:center;border:1px solid var(--card-border);box-shadow:0 8px 28px -15px rgba(122,80,48,0.12);}
+  .quote-box .qm{font-family:'Noto Serif TC',serif;font-size:52px;color:var(--brown);opacity:0.35;line-height:0.5;display:block;margin-bottom:16px;}
+  .quote-box p{font-family:'Noto Serif TC',serif;font-size:17.5px;color:var(--ink);max-width:500px;margin:0 auto;line-height:2.1;}
+
+  .price-block{background:linear-gradient(135deg,#0C0604,var(--brown));border-radius:26px;padding:44px 36px;text-align:center;position:relative;overflow:hidden;box-shadow:0 20px 50px -20px rgba(122,80,48,0.45);}
+  .price-block::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(200,160,96,0.18),transparent 50%),radial-gradient(circle at 20% 80%,rgba(154,112,80,0.15),transparent 50%);}
+  .price-inner{position:relative;z-index:1;}
+  .price-tag{display:inline-block;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.25);border-radius:999px;padding:6px 20px;font-size:13px;font-weight:700;letter-spacing:0.15em;color:white;margin-bottom:8px;}
+  .price-limit{display:inline-block;background:rgba(255,255,255,0.2);border:1px solid rgba(255,255,255,0.28);border-radius:999px;padding:4px 14px;font-size:12px;font-weight:700;color:#FAE8D0;margin-bottom:16px;margin-left:8px;}
+  .price-block h2{font-family:'Noto Serif TC',serif;font-weight:900;font-size:clamp(22px,4vw,30px);color:white;margin-bottom:14px;}
+  .price-amount{font-family:'Noto Serif TC',serif;font-size:clamp(44px,8vw,64px);font-weight:900;color:#FAE8D0;line-height:1;margin:20px 0 10px;}
+  .price-amount span{font-size:0.5em;vertical-align:top;margin-top:12px;display:inline-block;}
+  .price-block p{color:rgba(255,255,255,0.88);font-size:15.5px;max-width:460px;margin:0 auto 28px;}
+  .price-cta{display:inline-block;background:white;color:var(--brown);font-family:'Noto Serif TC',serif;font-weight:700;font-size:16px;padding:14px 36px;border-radius:999px;text-decoration:none;transition:transform .2s,box-shadow .2s;box-shadow:0 8px 24px -8px rgba(12,6,4,0.3);}
+  .price-cta:hover{transform:translateY(-2px);}
+  .price-note{margin-top:18px;font-size:13px;color:rgba(255,255,255,0.45);}
+
+  .cta-section{padding:70px 0 100px;}
+  .cta-header{text-align:center;margin-bottom:44px;}
+  .cta-eyebrow{font-size:12.5px;letter-spacing:0.35em;color:var(--brown);font-weight:700;margin-bottom:14px;text-transform:uppercase;display:block;}
+  .cta-header h2{font-family:'Noto Serif TC',serif;font-weight:700;font-size:clamp(21px,3.8vw,28px);color:var(--ink);margin-bottom:13px;}
+  .cta-header p{color:var(--ink-dim);font-size:15px;max-width:460px;margin:0 auto;}
+  .cta-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:32px;}
+  .cta-opt{background:var(--card-bg);border:1px solid var(--card-border);border-radius:20px;padding:26px 22px;text-align:center;box-shadow:0 6px 22px -14px rgba(122,80,48,0.12);transition:transform .3s;}
+  .cta-opt:hover{transform:translateY(-4px);}
+  .cta-opt .icon{font-size:26px;display:block;margin-bottom:11px;}
+  .cta-opt h3{font-family:'Noto Serif TC',serif;font-size:16px;color:var(--ink);margin-bottom:9px;}
+  .cta-opt p{font-size:13px;color:var(--ink-dim);margin-bottom:16px;line-height:1.8;}
+  .line-btn{display:inline-flex;align-items:center;gap:6px;padding:8px 20px;background:linear-gradient(135deg,var(--brown),var(--ochre));color:white;font-weight:700;border-radius:999px;font-size:13.5px;text-decoration:none;transition:opacity .2s,transform .2s;}
+  .line-btn:hover{opacity:0.85;transform:translateY(-1px);}
+  .cta-note{text-align:center;background:rgba(122,80,48,0.07);border:1px solid rgba(122,80,48,0.15);border-radius:14px;padding:20px 24px;color:var(--ink-dim);font-size:14px;}
+
+  footer{text-align:center;padding:40px 24px 60px;font-size:12.5px;color:rgba(122,80,48,0.32);letter-spacing:0.08em;}
+
+  @media(max-width:600px){
+    .hero{padding:80px 20px 64px;}
+    .ziwei-grid{grid-template-columns:1fr;}
+    .cta-grid{grid-template-columns:1fr;}
+    .situation,.oracle-card,.compat-row{padding:22px 16px;}
+    .price-block{padding:36px 22px;}
+    .quote-box{padding:32px 22px;}
+  }
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<script>
+  const floaties=[
+    {top:'6%',left:'3%',size:16,d:'7s',e:'🍂'},
+    {top:'28%',left:'92%',size:14,d:'9s',e:'✨'},
+    {top:'58%',left:'2%',size:15,d:'8s',e:'🌾'},
+    {top:'80%',left:'91%',size:13,d:'6s',e:'🍃'},
+  ];
+  document.addEventListener('DOMContentLoaded',()=>{
+    floaties.forEach((f,i)=>{
+      const el=document.createElement('div');el.className='floaty';
+      el.style.cssText=`top:${f.top};left:${f.left};font-size:${f.size}px;--d:${f.d};animation-delay:${i*1.8}s`;
+      el.textContent=f.e;document.body.appendChild(el);
+    });
+  });
+</script>
+
+<header class="hero">
+  <svg class="hero-deco" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="100" cy="100" r="95" fill="none" stroke="#7A5030" stroke-width="1.2"/>
+    <circle cx="100" cy="100" r="78" fill="none" stroke="#B08040" stroke-width="0.8" stroke-dasharray="4 6"/>
+    <circle cx="100" cy="100" r="60" fill="none" stroke="#9A7050" stroke-width="1"/>
+    <circle cx="100" cy="100" r="42" fill="none" stroke="#7A5030" stroke-width="0.6" stroke-dasharray="2 5"/>
+    <circle cx="100" cy="100" r="24" fill="none" stroke="#B08040" stroke-width="0.8"/>
+    <!-- 摩羯山羊角 -->
+    <path d="M84,72 Q70,54 66,65 Q62,76 76,81 Q87,84 90,76" fill="none" stroke="#7A5030" stroke-width="1" opacity="0.5"/>
+    <path d="M90,76 Q88,92 82,108" fill="none" stroke="#B08040" stroke-width="0.9" opacity="0.45"/>
+    <!-- Othala家形符文 -->
+    <path d="M112,120 L124,100 L136,120 M112,120 L136,120 M118,112 L130,112" fill="none" stroke="#C8A060" stroke-width="0.9" opacity="0.48"/>
+  </svg>
+  <div class="hero-content reveal">
+    <div class="month-badge">🍂 October 2026</div>
+    <div class="eyebrow">October Rune × ZiWei Reading · 2026</div>
+    <h1>♑ 摩羯座</h1>
+    <div class="sub">10月感情運勢｜盧恩符文 × 紫微斗數解析</div>
+    <div class="brown-line"></div>
+    <p class="lede">摩羯座，這個10月感情有一種說不清楚的悶——Othala 說你待在熟悉的地方出不來，Fehu 逆位說感情能量在往外漏。化忌加化權讓你以為主導權在自己手上，但實際上你被牽著鼻子走，彆扭又不說，喜怒哀樂都悶在心裡。這個月，先承認那個悶，才能讓感情重新流動。</p>
+    <div class="scroll-hint">往下看，牌說了什麼
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7A5030" stroke-width="1.8"><path d="M12 4v16M5 13l7 7 7-7"/></svg>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <section id="keynote">
+    <div class="core-banner reveal">
+      <span class="b-icon">🍂</span>
+      <h3>這個月的核心：你以為你在掌控，但你被牽著走</h3>
+      <p>化權說你想主導、想掌握感情的節奏，但化忌壓著那個主導欲，讓那個「控制」只是你以為的——實際上你是被對方的反應、被感情的情勢牽著走的那一個。Othala 說你待在舒適圈裡，Fehu 逆位說感情的能量在悄悄流失。你不說真實的感受，對方也讀不懂你在想什麼，然後兩個人都在等，等到感情的溫度慢慢涼掉。</p>
+    </div>
+  </section>
+
+  <section id="rune-cards">
+    <h2 class="section-title">盧恩牌陣解析</h2>
+    <p class="section-sub">Othala 的舒適圈 × Fehu 逆位的流失，說的是這個月感情的困境。</p>
+    <div class="divider"></div>
+    <div class="card-grid">
+
+      <article class="oracle-card reveal">
+        <div class="card-top">
+          <div class="card-glyph g-brown">ᛟ</div>
+          <div>
+            <div class="card-name">Othala 家族・舒適圈是安全的，但感情在外面</div>
+            <span class="card-tag tag-up">盧恩・正位</span>
+          </div>
+        </div>
+        <div class="card-body">
+          Othala 是家和歸屬感的符文，它說的是那個讓你感覺安全、熟悉、不需要冒險的地方。這個月它在摩羯座的感情場域說的是：你在那個舒適圈裡——不主動說感受、不打破現在的平衡、用忙碌和沉默來維持一種「還好」的假象。那個舒適圈是安全的，但感情的真實進展需要你走出那個框架，說一些讓你有點怕說錯的話，做一些讓你有點不確定的事。Othala 說那個家的感覺是真實的，但它也說：一直待在那個熟悉的地方，感情就停在那裡，不往前也不往後，慢慢地，那個溫度就這樣消耗完了。
+        </div>
+      </article>
+
+      <article class="oracle-card reveal">
+        <div class="card-top">
+          <div class="card-glyph g-ochre">ᚠ</div>
+          <div>
+            <div class="card-name">Fehu 豐盛・感情能量在流失，需要重新注入</div>
+            <span class="card-tag tag-rev">盧恩・逆位</span>
+          </div>
+        </div>
+        <div class="card-body">
+          Fehu 正位是豐盛和資源的符文，逆位的時候說的是那份能量在往外流——這個月你的感情能量有一個地方在悄悄地消耗。可能是你一直壓著那個想說的話讓自己消耗、可能是你在感情裡投入的和感受到的回報之間有一個越來越大的落差、可能是你在等一個對方主動的訊號而那個等待讓你的感情動力越來越低。Fehu 逆位說那個流失不是突然的，是慢慢的、你一開始感覺不太到的那種。這個月最需要的，是讓那個消耗的地方重新被看見，讓那份感情能量有一個重新注入的方式——不是等，而是說。
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="ziwei">
+    <h2 class="section-title">紫微斗數牌卡解析</h2>
+    <p class="section-sub">化忌 × 化權，你以為你在掌控，實際上你被牽著走。</p>
+    <div class="divider"></div>
+    <div class="ziwei-box reveal">
+      <div class="ziwei-header">
+        <div class="ziwei-badge">✦ 紫微斗數・感情星曜解析</div>
+        <h3>化忌 × 化權・主導的幻覺</h3>
+      </div>
+      <div class="ziwei-grid">
+        <div class="ziwei-card">
+          <span class="zc-star">化權</span>
+          <h4>化權・想掌控，想主導感情節奏</h4>
+          <p>化權說你有一種想掌握感情節奏的欲望——想決定什麼時候說、什麼時候不說、讓事情按照你設想的方向走。那個掌控欲是真實的，但這個月它被化忌壓住，讓那個「控制」只是你以為的，實際上感情的走向早就不在你的設想裡了。</p>
+        </div>
+        <div class="ziwei-card">
+          <span class="zc-star">化忌</span>
+          <h4>化忌・阻礙、糾結、讓事情卡住</h4>
+          <p>化忌是阻礙和糾結的星——這個月它讓你的化權主導欲找不到出口，讓你想說的話說不出來、想做的事做不了，感覺有什麼東西一直在卡著。那個卡不是外在的，是你內心的那個「萬一說錯了怎麼辦」、「萬一對方反應不是我想的那樣怎麼辦」讓你一直停在那裡。</p>
+        </div>
+      </div>
+      <div class="ziwei-combo">
+        <strong>化忌 + 化權 + Othala + Fehu逆位說同一件事：</strong>你想掌控感情（化權），但糾結讓你動不了（化忌），你待在舒適圈等（Othala），感情能量悄悄流失（Fehu逆位）。<strong>這個月的困境不是外在，是你自己的那個「不敢說」。打破那個彆扭，感情才有機會重新動起來。</strong>
+      </div>
+    </div>
+  </section>
+
+  <section id="comfort">
+    <h2 class="section-title">那個彆扭，說清楚是什麼</h2>
+    <p class="section-sub">摩羯座這個月最熟悉的感情困境——你不孤單，這些感受這個月特別重。</p>
+    <div class="divider"></div>
+    <div class="comfort-box reveal">
+      <h3>🍂 那個說不出口的，才是問題所在</h3>
+      <div class="comfort-list">
+        <div class="comfort-item">
+          <span class="ci-icon">😶</span>
+          <div class="ci-text">
+            <h4>明明有感覺，但就是說不出口</h4>
+            <p>摩羯座的彆扭有一種很特別的表現：你心裡有很清楚的感受，喜歡就是喜歡，難過就是難過，但那個感受在說出口之前被你自己攔截了——「說了對方會怎麼想」、「說了之後如果氣氛變得奇怪怎麼辦」、「算了，不說也沒關係」。Fehu 逆位說那個「不說」就是感情能量流失的地方，你以為說不說無所謂，但那個悶在心裡的感受，這個月是在消耗你的。</p>
+          </div>
+        </div>
+        <div class="comfort-item">
+          <span class="ci-icon">🔄</span>
+          <div class="ci-text">
+            <h4>以為自己在主導，其實在等對方</h4>
+            <p>化權說你想掌控，但化忌說你其實在等——等對方先說、等對方先表態、等一個讓你不需要冒險就能確認的訊號。那個等讓你以為你是在「策略性地等待」，但實際上你是把主導權給了對方，然後被對方的反應（或者不反應）牽著走。Othala 說你在舒適圈裡等，那個等本身就是 Fehu 逆位說的能量流失。</p>
+          </div>
+        </div>
+        <div class="comfort-item">
+          <span class="ci-icon">📵</span>
+          <div class="ci-text">
+            <h4>兩個人沒什麼交流，但也沒有真的說清楚</h4>
+            <p>這個月可能你和對方（無論是現有對象或心動的人）之間有一種「都在，但也都不在」的狀態——聯絡不多，相處時話不多，但也沒有發生什麼讓你可以說「我們有問題」的事。Othala 說那個平靜是舒適圈的假象，Fehu 逆位說那個平靜背後感情能量在流失。有時候兩個人之間最需要的一句話，就是「你最近怎麼了」，或者「我最近有點想你」。</p>
+          </div>
+        </div>
+        <div class="comfort-item">
+          <span class="ci-icon">🌀</span>
+          <div class="ci-text">
+            <h4>感情裡有一個一直沒有說清楚的東西，在那裡待著</h4>
+            <p>化忌說有一個東西卡著——可能是你們之間有一件沒有說清楚的事、一個沒有表態的關係、一個你一直想提但沒有提的話題。那個東西就在那裡，讓感情的氣氛有一點什麼，但你說不清楚是什麼。Fehu 逆位說那個卡著的東西這個月在消耗感情能量，Othala 說你用待在舒適圈來假裝它不存在，但它在。這個月試著讓它被說出來。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="situations">
+    <h2 class="section-title">你的10月</h2>
+    <p class="section-sub">找到你的狀態，看看這個月的牌對你說了什麼。</p>
+    <div class="divider"></div>
+    <div class="situation-list">
+
+      <div class="situation s1 reveal">
+        <span class="sit-tag">🍂 單身・還不是時候</span>
+        <h3>這個月先把自己那個彆扭解決——緣分需要你走出舒適圈才能遇到</h3>
+        <p>單身的摩羯座，這個月牌說的是「還不是時候」——不是緣分不好，而是這個月你的狀態還停在 Othala 的舒適圈裡，沒有走出來讓那個緣分有機會靠近你。Fehu 逆位說你現在的感情能量是往內收的，不是往外流動的，那個收縮的狀態讓你遇到的機會也少，就算遇到了也容易因為彆扭而讓它過去。</p>
+        <div class="brown-tag">「我有時候遇到感覺還不錯的人，但就是說不出什麼，讓對方感覺我沒有興趣，或者我自己就先退縮了——然後後來有點後悔。」</div>
+        <p>化忌說那個讓你退縮的東西不是對的人還沒有出現，而是你在那個人出現的時候讓化忌把你攔住了。這個月試著先在沒有感情壓力的地方練習說出自己的感受——和朋友說、和家人說、讓自己習慣那個「說出真實感受」的感覺。當那個彆扭少一點，Othala 的舒適圈大一點，緣分這個月就有機會走進來。</p>
+      </div>
+
+      <div class="situation s2 reveal">
+        <span class="sit-tag">🌾 有交往對象</span>
+        <h3>兩個人交流少，但問題不是感情出了問題，是你們都不說</h3>
+        <p>有交往對象的摩羯座，這個月 Othala 和 Fehu 逆位放在一起說的是：你們的感情有根，但這個月那個根因為缺少水分而開始有一點悶。那個水分就是真實的交流——不是日常的「吃了嗎」、「今天怎樣」，而是那種讓對方真正感受到你這個月在想什麼、你對這段感情有什麼感受的那種說話。</p>
+        <div class="brown-tag">「感覺最近我們都各忙各的，相處起來有點沒有以前那麼有話說——我有想說什麼，但每次想開口又覺得算了，反正也不是什麼大事。」</div>
+        <p>化忌說那個「算了」就是問題所在——每一個「算了，不說了」都是 Fehu 逆位說的一點能量流走。這個月試著讓一件本來你要說「算了」的事，說出來。不需要是大事，就是一個真實的感受、一個真實的想法——讓對方感覺「原來他/她最近是這樣想的」。那個說，比任何計畫性的約會都更讓 Othala 的根重新有水分。</p>
+      </div>
+
+      <div class="situation s3 reveal">
+        <span class="sit-tag">💛 有結婚對象／已婚</span>
+        <h3>Othala 說這個根是真的——但讓它繼續深，需要你走出那個彆扭</h3>
+        <p>在長期關係裡，化忌和 Othala 這個月說的是一種很多長期伴侶都熟悉的狀態：你們之間有一個舒適但有點悶的平衡——沒有什麼大問題，但也沒有什麼真正讓彼此都感覺「我們之間還是有真實的連結」的時刻。化權說你想讓事情按照你想的方式走，但化忌說那個控制讓你一直在等對方先動，而對方也在等你。</p>
+        <div class="brown-tag">「我們相處起來很平靜，不是不好，就是有點想要多一點什麼——但我也說不清楚是什麼，就是感覺有點悶。」</div>
+        <p>Fehu 逆位說那個「有點悶」是感情能量在流失的訊號，不是大問題，但不注意的話會越來越悶。Othala 說這個長期關係的根是真實的，它值得你這個月走出那個彆扭說一句話——不是解決什麼問題，而是讓對方感覺到你的存在，讓那個根重新有水分。一句「最近感覺我們好像有點少說話」，往往就是讓那個悶重新流動起來的起點。</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="compat">
+    <h2 class="section-title">10月摩羯座感情星座配對</h2>
+    <p class="section-sub">誰幫你打破那個彆扭？誰讓你更悶在舒適圈出不來？</p>
+    <div class="divider"></div>
+
+    <div class="compat-section reveal">
+      <div class="compat-title good">✦ 感情能量最合・這個月幫你走出舒適圈</div>
+      <div class="compat-grid">
+        <div class="compat-row">
+          <div class="compat-rank rank-good">1</div>
+          <div class="compat-sign sign-good">♐</div>
+          <div class="compat-info">
+            <h4>射手座 ♐・第一名</h4>
+            <p>射手的自由和直接這個月是摩羯 Othala 舒適圈最好的出口——射手不讓你待在那個悶的地方，他/她的輕鬆和不在乎讓摩羯的彆扭感覺沒有那麼重要，然後不知不覺說出了平常說不出口的話。Fehu 逆位說能量在流失，射手這個月重新讓那個能量流動起來的方式是：讓摩羯在輕鬆的氛圍裡忘記自己在防禦，說出真實的自己。</p>
+          </div>
+        </div>
+        <div class="compat-row">
+          <div class="compat-rank rank-good">2</div>
+          <div class="compat-sign sign-good">♈</div>
+          <div class="compat-info">
+            <h4>牡羊座 ♈・第二名</h4>
+            <p>牡羊的直接打破摩羯的彆扭——化忌讓摩羯一直在等，牡羊不等，他/她直接說出來，讓摩羯不需要主動就能感受到那份感情的溫度。Othala 說舒適圈，牡羊讓那個舒適圈有了一個自然而然走出來的理由，而不是摩羯需要強迫自己走出去。</p>
+          </div>
+        </div>
+        <div class="compat-row">
+          <div class="compat-rank rank-good">3</div>
+          <div class="compat-sign sign-good">♌</div>
+          <div class="compat-info">
+            <h4>獅子座 ♌・第三名</h4>
+            <p>獅子的光芒讓摩羯的 Othala 舒適圈有了一個想走出去的理由——你不是為了感情走出去，而是被獅子的存在感自然地吸引出去。化忌說卡著，但在獅子面前那個卡著有時候就這樣被解開了，因為獅子讓對話變得有趣、有溫度，讓摩羯忘記自己在防禦。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="compat-section reveal">
+      <div class="compat-title warn">⚠️ 這個月讓你更悶在舒適圈的組合</div>
+      <div class="compat-grid">
+        <div class="compat-row">
+          <div class="compat-rank rank-warn">1</div>
+          <div class="compat-sign sign-warn">♊</div>
+          <div class="compat-info">
+            <h4>雙子座 ♊・第一名</h4>
+            <p>雙子的輕盈和表面讓摩羯的化忌更加糾結——摩羯這個月需要的是一種讓感情有重量、有深度的交流，但雙子這個月的輕快讓那個深度感覺找不到落地。你說了一件重要的事，雙子已經跳到下一個話題了，讓摩羯感覺「我是不是說錯了什麼」然後更不想說，Fehu 逆位的流失在這個組合裡加速。</p>
+          </div>
+        </div>
+        <div class="compat-row">
+          <div class="compat-rank rank-warn">2</div>
+          <div class="compat-sign sign-warn">♎</div>
+          <div class="compat-info">
+            <h4>天秤座 ♎・第二名</h4>
+            <p>天秤的猶豫加上摩羯的彆扭，兩個人都不說，讓 Fehu 逆位的流失更嚴重——你等他/她表態，他/她也在等你表態，然後化忌讓這個等待變成一個誰都不動的僵局。Othala 說舒適圈，天秤和摩羯這個月一起在各自的舒適圈裡相互觀望，讓感情的溫度這個月特別容易在沉默裡慢慢涼掉。</p>
+          </div>
+        </div>
+        <div class="compat-row">
+          <div class="compat-rank rank-warn">3</div>
+          <div class="compat-sign sign-warn">♒</div>
+          <div class="compat-info">
+            <h4>水瓶座 ♒・第三名</h4>
+            <p>水瓶太理性距離感，摩羯這個月需要的溫度完全感受不到——化忌讓摩羯已經很難說出感受，水瓶的冷靜讓那個說出口的難度更高，讓摩羯更加縮回 Othala 的舒適圈裡。Fehu 逆位說能量在流失，但在水瓶面前那個流失連讓摩羯感覺到的機會都沒有，就這樣靜靜地走了。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="quote">
+    <div class="quote-box reveal">
+      <span class="qm">"</span>
+      <p>摩羯座，Othala 說你的舒適圈很安全，Fehu 逆位說感情能量在流失，化忌說你一直卡著——這個10月，不需要一次說很多，只需要說一句你平常選擇不說的真實感受，讓那個悶有一個出口。</p>
+    </div>
+  </section>
+
+  <section id="price" style="padding:60px 0 0;position:relative;z-index:1;">
+    <div class="container">
+      <div class="price-block reveal">
+        <div class="price-inner">
+          <div class="price-tag">✦ 第一次體驗限定</div>
+          <div class="price-limit">⚠️ 本月名額有限</div>
+          <h2>麵包學長初次檢測</h2>
+          <div class="price-amount"><span>NT$</span>199</div>
+          <p>想知道化忌說的那個卡著的東西在你的感情裡具體是什麼？想確認 Fehu 逆位的流失從哪裡來、怎麼補回來？麵包學長初次檢測幫你快速看清楚，讓那個悶有一個真正的出口。本月名額有限，額滿暫停。</p>
+          <a class="price-cta" href="https://line.me/ti/p/~423hhxdn" target="_blank" rel="noopener">留言「199」立即報名</a>
+          <div class="price-note">私訊麵包學長 LINE @423hhxdn，留言「199」即可・額滿為止</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-header reveal">
+      <span class="cta-eyebrow">✦ 讓那個悶有一個出口</span>
+      <h2>占卜幫你把這個月感情的樣貌看清楚</h2>
+      <p>當你知道化忌卡著的是什麼、Fehu 逆位流失的是哪裡，你才能讓感情重新動起來，而不是繼續等在舒適圈裡。</p>
+    </div>
+    <div class="cta-grid reveal">
+      <div class="cta-opt">
+        <span class="icon">🔮</span>
+        <h3>盧恩符文占卜</h3>
+        <p>想確認 Othala 說的那個舒適圈在你感情裡具體是什麼樣子？想知道 Fehu 逆位的流失怎麼補回來？盧恩幫你看清楚。</p>
+        <a class="line-btn" href="https://line.me/ti/p/~423hhxdn" target="_blank" rel="noopener">私訊了解</a>
+      </div>
+      <div class="cta-opt">
+        <span class="icon">⭐</span>
+        <h3>紫微斗數合盤</h3>
+        <p>想看化忌和化權在你命盤的完整影響？想確認你和對方的命盤這個月的互動是真的卡著還是有解法？合盤幫你看清楚。</p>
+        <a class="line-btn" href="https://line.me/ti/p/~423hhxdn" target="_blank" rel="noopener">私訊了解</a>
+      </div>
+      <div class="cta-opt">
+        <span class="icon">💰</span>
+        <h3>金錢靈氣體驗</h3>
+        <p>想讓 Fehu 逆位流失的感情能量重新補滿？金錢靈氣幫你把整體能量重新調整，讓感情在更好的狀態下重新流動。</p>
+        <a class="line-btn" href="https://line.me/ti/p/~423hhxdn" target="_blank" rel="noopener">私訊了解</a>
+      </div>
+      <div class="cta-opt">
+        <span class="icon">🌀</span>
+        <h3>奇門遁甲・開桃花</h3>
+        <p>想讓 Othala 的舒適圈有一個自然的出口？想找到這個月最適合說出那句真實感受的時機點？奇門遁甲幫你算清楚。</p>
+        <a class="line-btn" href="https://line.me/ti/p/~423hhxdn" target="_blank" rel="noopener">私訊了解</a>
+      </div>
+    </div>
+    <div class="cta-note reveal">
+      📣 10月集體體驗冥想活動即將登場，特別適合這個月需要讓 Fehu 的感情能量重新流動、讓 Othala 的舒適圈找到一個溫柔出口的摩羯座，名額有限，歡迎隨時私訊詢問。
+    </div>
+  </div>
+</section>
+
+<footer>♑ Capricorn Love Reading · Rune × ZiWei · October 2026</footer>
+
+<script>
+  const observer=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{if(e.isIntersecting) e.target.style.animationPlayState='running';});
+  },{threshold:0.1});
+  document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
